@@ -208,7 +208,7 @@ public class MemberController {
 		Object object = new Object();
 		// 이번달
 		if (curYearNum == year && curMonthNum == month) {
-			for (int i = 1; i <= curDateNum; i++) {
+			for (int i = 1; i <= monthList.size(); i++) {
 				try {
 					if(obj.get(monthList.get(i - 1))!=null) {
 						object = parser.parse(obj.get(monthList.get(i - 1)).toString());
